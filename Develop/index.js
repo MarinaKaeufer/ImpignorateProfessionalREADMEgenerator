@@ -1,4 +1,5 @@
 // TODO: Include packages needed for this application
+var inquirer = require('inquirer');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -59,14 +60,19 @@ function init() {
     console.log(` `);
     console.log(` `);
 
-    // Loop through the questions array and prompt user for answer
-    for(let i = 0; i < questions.length; i++){
-        console.log(questions[i].message);
+    // Display question
+    inquirer
+        .prompt(questions)
+        .then((answers) => {
+            // Use user feedback for... whatever!!
+            console.log(`Your answers were ${answers}`);
+        })
+        .catch((error) => {
+            console.log("Something went wrong " + error);
+        });
     }
     // Then generate readme markup text for the readme 
     // Add it to the readme 
-
-}
 
 // Function call to initialize app
 init();
