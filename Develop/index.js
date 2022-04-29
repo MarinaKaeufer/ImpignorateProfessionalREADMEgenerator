@@ -5,14 +5,14 @@ const questions = [
 {
     type: "input", 
     name: "title",
-    message: "What is your project title."
+    message: "What is your project title?"
 
 },
 
 {
     type: "input",
     name: "sections",
-    message: "Which sections does your project include."
+    message: "Which sections do your project include?"
 
 
 },
@@ -20,21 +20,29 @@ const questions = [
 { 
     type: "input",
     name: "description",
-    message: "What is your project's description."
+    message: "What is your project's description?"
 
 },
 
 {
-    name: "input",
+    type: "option",
     name: "license",
-    message: "Which licence did you use."
+    message: "Which licence did you use?"
 
 }, 
 
 {
-    name: "input", 
-    message: "GitHub", 
-    message: "What is your GitHub username."
+    type: "input", 
+    name: "GitHub", 
+    message: "What is your GitHub username?"
+
+
+}, 
+
+{
+    type: "input", 
+    name: "email", 
+    message: "What is your email?"
 
 
 }
@@ -44,7 +52,21 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    console.log(` `);
+    console.log(` `);
+    console.log(`Hi and welcome to the Readme generator.`);
+    console.log(` `);
+    console.log(` `);
+
+    // Loop through the questions array and prompt user for answer
+    for(let i = 0; i < questions.length; i++){
+        console.log(questions[i].message);
+    }
+    // Then generate readme markup text for the readme 
+    // Add it to the readme 
+
+}
 
 // Function call to initialize app
 init();
