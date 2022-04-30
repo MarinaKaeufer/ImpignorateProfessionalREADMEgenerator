@@ -1,5 +1,8 @@
 // TODO: Include packages needed for this application
 var inquirer = require('inquirer');
+const fs = require('fs');
+
+var generateMarkdown = require('./utils/generateMarkdown.js');
 // TODO Don't need this?
 // const data = {
 //     title: "", 
@@ -57,7 +60,7 @@ const questions = [
 }, 
 {
     type: "input", 
-    name: "GitHub", 
+    name: "gitHub", 
     message: "What is your GitHub username?"
 }, 
 {
@@ -82,7 +85,13 @@ function init() {
     inquirer
         .prompt(questions)
         .then((responses) => {
-           
+            const markdown = generateMarkdown(responses);
+            fs.writeFile('../README.md', markdown, err => {
+                if (err) {
+                  console.error(err);
+                }
+              });
+
         })
         .catch((error) => {
             console.log("Something went wrong " + error);
