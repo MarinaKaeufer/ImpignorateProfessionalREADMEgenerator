@@ -1,8 +1,8 @@
 
-  # Professional read me generator
+  # Professional README Generator 
 
   ## Description
-  Consists of Table of Contents
+  Includes Table of Contents
 
   ## Table of Contents
   * [Installation](#installation)
@@ -24,12 +24,12 @@
   This is the most permissive type of software license. When software is in the public domain, anyone can modify and use the software without any restrictions. But you should always make sure it’s secure before adding it to your own codebase. Warning: Code that doesn’t have an explicit license is NOT automatically in the public domain. This includes code snippets you find on the internet.
 
   ## Contribution
-  Marina
+  Marina Kaeufer
 
   ## Tests
   None
 
   ## Questions
-  Please checkout my [github page here](MarinaKAeufer)   
+  Please checkout my [github page here](MarinaKaeufer)   
   If you have any questions do not hesitate to contact me marishutka@yahoo.com 
 

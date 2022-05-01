@@ -13,7 +13,9 @@ As a developer I want a README generator so I can quickly create a professional 
 * WHEN I enter my email address THEN this is added to the section of README entiteled Questions, with instructions on how to reach me with additioanl questions
 * WHEN I click on the links in the Table of Contents THEN I am taken to the corresponding section of README
 
+## Walkthrough Video
 
+https://drive.google.com/file/d/1d5TVnWoQCi9-wN-IfqISBmVQ50XnXOKx/view
 
 ## Contribution
 
