@@ -3,18 +3,6 @@ var inquirer = require('inquirer');
 const fs = require('fs');
 
 var generateMarkdown = require('./utils/generateMarkdown.js');
-// TODO Don't need this?
-// const data = {
-//     title: "", 
-//     description: "", 
-//     table_contents: [], // Not based on user input
-//     installation: "",
-//     usage: "", 
-//     license: "", // Partially from user
-//     contribution: "",
-//     test: "",
-//     questions: "" // Partiall from user
-// }
     
 // TODO: Create an array of questions for user input
 const questions = [
@@ -53,10 +41,10 @@ const questions = [
     message: "What are your testing instructions?"
 },
 {
-    type: "option",
     name: "license",
-    message: "Which licence did you use?"
-    // Show options
+    message: "Which licence did you use?",
+    type: "list",
+    choices: ["Public domain", "Permissive", "LGPL", "Copyleft"]
 }, 
 {
     type: "input", 
